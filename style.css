@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #F4F4F4;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+ul{
+  padding: none;
+}
+img{
+  max-width:100%;
+
+}
+
+/*============================== Hamburger Menu ============================*/
+.mobile-menu-container {
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 5;
+  padding: .5em;
+  padding-left: 0;
+  width:100%;
+  background-color: white;
+}
+#title{
+  position: fixed;
+  display: block;
+  font-size: 1.4em;
+  z-index: 6;
+  margin-left: 1em;
+  margin-top: .6em;
+}
+
+/* Style Hamburger*/
+.bar1, .bar3 {
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.bar2{
+  cursor: pointer;
+  vertical-align: middle;
+  height: 5px;
+  font-size: 1.2em;
+  margin-top: -15px;
+  margin-bottom: 11px;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/*============================== Mobile Menu ============================*/
+
+#mobile-menu{
+  position: fixed;
+  text-align: center;
+  list-style: none;
+  background: #e89f90;
+  width: 100%;
+  color: white;
+  padding-top: 4.0em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+}
+#mobile-menu ul{
+  margin: none !important;
+
+}
+#mobile-menu li{
+  margin: none !important;
+}
+#mobile-menu li a{
+  border-style: solid;
+  border-top:  solid #c47b74;
+  border-left-style: none;
+  border-bottom: none;
+  display:inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  color: white;
+}
+#mobile-menu li a:hover{
+  transition: background-color 0.6s ease;
+  background: #c47b74;
+
+}
+.menu-hidden{
+  margin-top: -20em;
+}
+/*================================= Desktop menu =============================*/
+#desktop-menu{
+  position: relative;
+  height: 100%;
+  margin-top: 8em;
+  list-style: none;
+}
+#desktop-menu ul{
+  display: block;
+  background-color: white;
+}
+#desktop-menu li{
+  height: auto;
+  width: 100%;
+  text-decoration: none;
+}
+#desktop-menu img{
+  margin-right: 1em;
+  width: 60%;
+}
+#desktop-menu li a{
+
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  display: inline-block;
+  padding: .7em;
+  padding-right: 2em;
+  color: black;
+  transition: margin-right 0.6s ease;
+  background-color: #F4F4F4;
+
+}
+#desktop-menu li a:hover{
+  transition: margin-right 0.6s ease;
+  margin-right: 1.7em;
+}
+.arrow-holder{
+  box-shadow: inset 0 0 .5em #8C1500;
+
+  margin-left: -2.1em;
+  width: 2em;
+  height: 1.9em;
+  position: relative;
+  background-color: #e89f90;
+  display: inline-block;
+
+}
+.arrow {
+  margin-left: -1.7em;
+  margin-right: .5em;
+  margin-top: .5em;
+  display: inline-block;
+  z-index: 0;
+  position: relative;
+  border-right:3px solid #a9625e;
+  border-bottom:3px solid #a9625e;
+  width:12px;
+  height:12px;
+  transform: rotate(-45deg);
+}
+/*================== main content=================================*/
+#main{
+  height: 100%;
+  padding-top: 6em;
+  text-align: center;
+
+}
+#main p{
+  text-align: left;
+  font-size: 1.2em;
+}
+
+#biography {
+  padding: 1em;
+}
+/*================================== footer =================================*/
+
+footer{
+  position: relative;
+  bottom: 0;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+/*======================= information cards =================================*/
+
+.card {
+  margin-bottom: 1.5em;
+  padding-top: 1em;
+  background: #fff;
+  border-radius: 2px;
+  height: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: .25s;
+  border-radius: 2px;
+  text-align:left;
+}
+
+/*.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}*/
+
+.card-top {
+ width: auto;
+}
+
+.card-top img{
+  background-image: url("images/default-placeholder.png");
+  max-width:100%;
+}
+.card-top h1{
+  font-size: 1.5em;
+  position: relative;
+  color:black;
+}
+
+.card-body p{
+  position:relative;
+  font-size: 1em;
+}
+#sub {
+  margin-top: -.9em;
+  font-size: .1em;
+  color: grey;
+}
+.card-footer {
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+.card-footer ul {
+  text-align: right;
+
+}
+
+
+.card-footer li {
+  display: inline;
+  position: relative;
+  padding-left: .5em;
+  padding-right: .5em;
+  height: auto;
+  color: white;
+  text-align: center;
+  margin: 1em;
+}
+.card-footer a{
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.2);
+  background-color: #79a3d7;
+  display: inline-block;
+  padding: .5em;
+  margin: 1em;
+  height: auto;
+  transition: 0.6s ease;
+}
+.card-footer a:hover{
+  text-decoration: none;
+  transition: 0.6s ease;
+  box-shadow: none;
+}
+/*======================= Photo Display =================================*/
+#overlay{
+  /*opacity: ;*/
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.under {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: -1;
+}
+.over{
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 2;
+  opacity: .85;
+}
+.gallery {
+  cursor: pointer;
+  padding-bottom:.1em;
+  background-color: white;
+}
+.gallery img{
+
+  cursor: pointer;
+  border-radius: 2px
+}
+
+#full-screen-photo-section{
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  color: white;
+}
+#full-screen-photo-section div{
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*========================== contact form ====================================*/
+#contact-form {
+    padding: 2em;
+    text-align: center;
+}
+
+#contact-form h1 {
+}
+
+#contact-form h2 {
+	margin-bottom: 1em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: .1em;
+
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+	width: 100%;
+	margin-bottom: 1em;
+  margin-top: 1em;
+	padding: .2em;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {}
+
+#contact-form textarea {
+    height:10em;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;
+}
+
+#contact-form #submit-button {
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.2);
+  background-color: #79a3d7;
+  display: inline-block;
+  padding: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: auto;
+  transition: 0.6s ease;
+
+    width: auto;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+
+}
+
+#contact-form #submit-button:hover {
+  text-decoration: none;
+  transition: 0.6s ease;
+  box-shadow: none;
+}
+
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    display:none;
+}
+
+#errors li {
+    padding:2px;
+    list-style:none;
+}
+
+#errors li:before {
+    content: ' - ';
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';
+}
+
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    font-weight:bold;
+    display:none;
+}
+
+#errors.visible, #success.visible {
+    display:block;
+}
+
+#req-field-desc {
+    font-style:italic;
+}
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  {
+    color:#CCC;
+    font-style:italic;
+}
+
